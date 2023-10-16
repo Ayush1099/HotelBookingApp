@@ -1,6 +1,6 @@
 const express=require('express');
 const bodyParser=require('body-parser');
-const route=require('./Source/Routes/routing');
+const route=require('./Source/Routes/Routing');
 const auth = require("./Source/Middleware/Auth");
 require('./Model/connection')
 const cookieParser = require('cookie-parser');

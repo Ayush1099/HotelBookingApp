@@ -1,8 +1,8 @@
 const express=require('express');
 const routing=express.Router();
-const userController=require('../Controller/userController')
-const hotelController=require('../Controller/hotelController')
-const bookingController=require('../Controller/bookingController')
+const userController=require('../Controller/UserController')
+const hotelController=require('../Controller/HotelController')
+const bookingController=require('../Controller/BookingController')
 
 routing.post('/registerUser',userController.userRegister)
 routing.post('/loginUser',userController.userLogin)
