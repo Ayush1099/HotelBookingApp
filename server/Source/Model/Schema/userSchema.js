@@ -20,10 +20,6 @@ const userSchema=new mongoose.Schema(
             type:String,
             unique:true,
             required:[true,'Required field'],
-        }, 
-        UserBookings:{
-            type:Array,
-            unique:false,
         }
     }
 )

@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-//schema
+
 const hotelSchema=new mongoose.Schema(
     {
         HotelName:{

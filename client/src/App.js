@@ -18,10 +18,8 @@ function App() {
           <Route path="/bookings" element={<Bookings />} />
           <Route path="/bookingform" element={<BookingForm />} />
           <Route path="/updateform" element={<UpdateForm />} />
-          {/* Add other routes here */}
         </Routes>
       </Router>
-
     </EmailProvider>
   );
 }
