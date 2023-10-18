@@ -29,7 +29,7 @@ const BookingsCard = ({ booking, onDeleteSuccess }) => {
         }),
       });
 
-      if (response.status === 200) {
+      if (response.ok) {
         alert('Booking deleted successfully.');
         onDeleteSuccess();
       } else {
@@ -39,12 +39,16 @@ const BookingsCard = ({ booking, onDeleteSuccess }) => {
       console.error('Error:', error);
     }
   }
+  const formatDateForInput = (dateString) => {
+    const date = new Date(dateString);
+    return date.toISOString().split('T')[0]; // Format the date as "yyyy-MM-dd"
+};
 
   return (
     <Card>
       <Title>{HotelName}</Title>
-      <Description>Start Date: {StartDate}</Description>
-      <Description>End Date: {EndDate}</Description>
+      <Description>Start Date: {formatDateForInput(StartDate)}</Description>
+      <Description>End Date: {formatDateForInput(EndDate)}</Description>
       <Description>No. of Persons: {NoOfPersons}</Description>
       <Description>No. of Rooms: {NoOfRooms}</Description>
       <UpdateButton onClick={openUpdateForm}>Update</UpdateButton>

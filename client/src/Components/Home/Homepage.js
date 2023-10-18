@@ -20,13 +20,11 @@ function Homepage() {
       });
       if (response.ok) {
         const data = await response.json();
-        console.log('Data-->',data);
-        const dbHotels = data.getHotels;
+        const dbHotels = data;
         const mergedHotels = dbHotels.map((dbHotel, index) => ({
           ...dbHotel,
           images: HotelImages[index % HotelImages.length].images,
         }));
-
         setHotels(mergedHotels);
       }
     } catch (error) {

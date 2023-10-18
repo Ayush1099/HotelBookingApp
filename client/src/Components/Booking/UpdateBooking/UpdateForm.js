@@ -44,7 +44,7 @@ const UpdateForm = () => {
                 },
                 body: JSON.stringify(formData),
             });
-            if (response.status === 200) {
+            if (response.ok) {
                 alert('Booking updated successfully.');
             } else {
                 alert('Booking update failed.');

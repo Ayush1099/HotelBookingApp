@@ -41,7 +41,7 @@ const BookingForm = () => {
         },
         body: JSON.stringify(formData),
       });
-      if (response.status === 201) {
+      if (response.ok) {
         alert('Booking submitted successfully.');
         navigate('/bookings');
 

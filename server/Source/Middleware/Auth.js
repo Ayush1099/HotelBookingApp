@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 require('dotenv').config()
-const userModel = require("../../Model/Schema/userSchema")
+const userModel = require("../Model/Schema/userSchema")
+const Message=require("./ErrorMessages")
 
 const verifyToken = async (req, res, next) => {
     const token = req.headers['authorization']
@@ -12,13 +13,13 @@ const verifyToken = async (req, res, next) => {
             res.status(201).json({message: accessToken});
         }
         else {
-            res.status(404).json({message: "Invalid User"});
+            res.status(Message.NotFound.status).json({message: Message.NotFound.errorMessage});
         }
     }
     else {
         jwt.verify(token, `${process.env.SecretKey}`, function (err,decoded) {
             if (err) {
-                res.status(403).json({ message: "Invalid Request" })
+                res.status(Message.InvalidRequest.status).json({ message: Message.InvalidRequest.errorMessage })
             }
             else {
                 return next();

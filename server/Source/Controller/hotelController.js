@@ -1,6 +1,6 @@
-const hotelModel = require("../../Model/Schema/hotelSchema")
+const repo = require("../DataAccessLayer/HotelRepository")
 
 exports.getHotels=async(req,res)=>{
-    const getHotels=await hotelModel.find({}, { _id: 0, __v: 0 })
-    res.status(200).json({getHotels})
+    const response = await repo.getHotels();
+    res.status(200).json(response)
 }

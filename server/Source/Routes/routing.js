@@ -5,7 +5,7 @@ const hotelController=require('../Controller/HotelController')
 const bookingController=require('../Controller/BookingController')
 
 routing.post('/registerUser',userController.userRegister)
-routing.post('/loginUser',userController.userLogin)
+//routing.post('/loginUser',userController.userLogin)
 
 routing.get('/gethotels',hotelController.getHotels)
 
