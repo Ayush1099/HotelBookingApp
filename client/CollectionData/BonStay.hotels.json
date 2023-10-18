@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "6409765b98487268d67738f4"
+  },
+  "HotelName": "Club Mahindra",
+  "PhoneNo": 832277031,
+  "Address": "Goa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "640b3497cc3e7f7c56e66234"
+  },
+  "HotelName": "Marriott",
+  "PhoneNo": 832277038,
+  "Address": "Goa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "640b34a8cc3e7f7c56e66236"
+  },
+  "HotelName": "Alila",
+  "PhoneNo": 832703858,
+  "Address": "Goa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65278c93235d070a115bdec6"
+  },
+  "HotelName": "Radisson",
+  "PhoneNo": 832706548,
+  "Address": "Goa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65278cb4235d070a115bdec8"
+  },
+  "HotelName": "Hyatt",
+  "PhoneNo": 832704834,
+  "Address": "Goa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6527f1bc235d070a115bdecc"
+  },
+  "HotelName": "ITC",
+  "PhoneNo": 832754834,
+  "Address": "Goa",
+  "__v": 0
+}]
