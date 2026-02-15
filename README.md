@@ -1,5 +1,5 @@
 # HotelBookingApp
-This is a Hotel Booking App where the user can Booking Hotels and also Update and Delete the Bookings.
+This is a Hotel Booking App where the user can Book Hotels and also Update and Delete the Bookings.
 ![Alt text](client/image/homepage.png)
 
 # Technologies Used
